@@ -2,22 +2,24 @@
 Describes main statistic concepts
 
 
-# Statistical Data Types
+# Data Types
 
-| Main Category | Statistical Data Type | Description | Example Variables | Example Dataset Values |
-|---|---|---|---|---|
-| **Qualitative (Categorical)** | Categorical | Non-numeric data grouped into categories | Gender, department | Male/Female |
-| **Qualitative (Categorical)** | Nominal | Categories with no inherent order | Blood type, nationality | A, B, O, AB |
-| **Qualitative (Categorical)** | Ordinal | Categories with meaningful order | Satisfaction level, class rank | Poor, Fair, Good |
-| **Qualitative (Categorical)** | Binary (Dichotomous) | Only two possible categories | Pass/fail, yes/no | Yes/No |
-| **Quantitative (Numerical)** | Numerical | Numeric data representing counts or measurements | Height, income | 150, 200 |
-| **Quantitative (Numerical)** | Discrete | Countable numeric values | Number of students | 0, 1, 2 |
-| **Quantitative (Numerical)** | Continuous | Measurable values within a range | Weight, speed | 52.4, 61.8 |
-| **Quantitative (Numerical)** | Interval | Equal intervals but no true zero | Temperature (°C), IQ | 10°C, 20°C |
-| **Quantitative (Numerical)** | Ratio | Equal intervals with a true zero | Height, salary | 150 cm, $5000 |
-| **Structure-Based** | Cross-sectional | Data collected at one point in time | Population survey | Income data in 2026 |
-| **Structure-Based** | Time-series | Data collected over time | Monthly sales | Jan: 500, Feb: 620 |
-| **Structure-Based** | Panel (Longitudinal) | Repeated observations over time for same subjects | Patient tracking | BP across 5 years 
+## Data Types Overview
+
+| Type | Description | Example Variables | Example Dataset Values |
+|------|-------------|------------------|------------------------|
+| Categorical | Non-numeric data grouped into categories | Gender, department | Male / Female |
+| Nominal | Categories with no inherent order | Blood type, nationality | A, B, O, AB |
+| Ordinal | Categories with meaningful order | Satisfaction level, class rank | Poor, Fair, Good |
+| Binary | Only two possible categories | Pass/fail, yes/no | Yes/No, 1/0 |
+| Numerical | Numeric data representing counts or measurements | Height, income | 150, 200 |
+| Discrete | Countable numeric values | Number of students | 0, 1, 2 |
+| Continuous | Measurable values within a range | Weight, speed | 52.4, 61.8 |
+| Interval | Equal intervals but no true zero | Temperature (°C), IQ | 10°C, 20°C |
+| Ratio | Equal intervals with a true zero | Height, salary | 150 cm, $5000 |
+| Cross-sectional | Data collected at one point in time | Population survey | Income data in 2026 |
+| Time-series | Data collected over time | Monthly sales | Jan: 500, Feb: 620 |
+| Panel (Longitudinal) | Repeated observations over time for same subjects | Patient tracking | BP across 5 years |
 
 
 
