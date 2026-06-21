@@ -1,6 +1,6 @@
-# Main statistic concepts
 
 ## Data Types
+---
 
 | Type | Description | Example Variables | Example Dataset Values |
 |------|-------------|------------------|------------------------|
@@ -18,7 +18,7 @@
 | Panel (Longitudinal) | Repeated observations over time for same subjects | Patient tracking | BP across 5 years |
 
 
-## 📚 Statistical Foundations: Central Tendency & Robustness
+## 📚 Foundations: Central Tendency & Robustness
 ---
 
 | Term | Definition | Synonym | Example |
