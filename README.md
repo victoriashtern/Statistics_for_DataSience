@@ -1,10 +1,6 @@
-# Statistics_for_DataSience
-Describes main statistic concepts
+# Main statistic concepts
 
-
-# Data Types
-
-## Data Types Overview
+## Data Types
 
 | Type | Description | Example Variables | Example Dataset Values |
 |------|-------------|------------------|------------------------|
@@ -22,29 +18,92 @@ Describes main statistic concepts
 | Panel (Longitudinal) | Repeated observations over time for same subjects | Patient tracking | BP across 5 years |
 
 
-
-# Key Terms for Rectangular Data
-
-| Term | Definition | Synonyms |
-|---|---|---|
-| **Data frame** | Rectangular data (like a spreadsheet) is the basic data structure for statistical and machine learning models. | — |
-| **Feature** | A column within a table is commonly referred to as a feature. | attribute, input, predictor, variable |
-| **Outcome** | The variable being predicted in a study or machine learning problem, often a yes/no result. | dependent variable, response, target, output |
-| **Records** | A row within a table is commonly referred to as a record. | case, example, instance, observation, pattern, sample |
-
-
-
-# Key Statistical Terms (Measures of Center & Robustness)
+## 📚 Statistical Foundations: Central Tendency & Robustness
+---
 
 | Term | Definition | Synonym | Example |
 |---|---|---|---|
+| **Count** | The number of observations or data points in a dataset. | sample size (n) | Data: 2, 4, 6, 8 → count = 4 |
+| **Interquartile Range (IQR)** | The difference between the 75th percentile (Q3) and 25th percentile (Q1). | middle spread | Q1 = 2, Q3 = 10 → IQR = 8 |
 | **Mean** | The sum of all values divided by the number of values. | average | (2 + 4 + 6 + 8) / 4 = 5 |
-| **Weighted mean** | The sum of all values multiplied by their weights divided by the sum of the weights. | weighted average | (80×2 + 90×3) / (2 + 3) = 86 |
 | **Median** | The value such that half of the data lies above and half below. | 50th percentile | 2, 4, 6, 8, 10 → median = 6 |
+| **Mode** | The value that appears most frequently in a dataset. | most frequent value | 2, 2, 3, 4, 4, 4 → mode = 4 |
+| **Outlier** | A data value far away from most other values. | extreme value | 40k, 42k, 45k, 1M → 1M is an outlier |
 | **Percentile** | The value such that P percent of the data lies below it. | quantile | 90th percentile of test scores = 88 |
-| **Weighted median** | The value such that half of the total weight lies above and half below the sorted data. | — | Values: (10, 20, 30) with weights (1, 2, 3) → weighted median = 20 |
-| **Trimmed mean** | The mean after removing a fixed number of extreme values from both ends. | truncated mean | Data: 1, 2, 3, 4, 100 → trimmed mean (remove 1 & 100) = 3 |
-| **Robust** | Not sensitive to extreme values. | resistant | Median income remains stable even if one billionaire is added |
-| **Outlier** | A data value that is very different from most of the data. | extreme value | Salaries: 40k, 42k, 45k, 1M → 1M is an outlier |
+| **Robust** | Not sensitive to extreme values. | resistant | Median income stays stable even with an extreme salary |
+| **Trimmed Mean** | Mean after removing extreme values from both ends. | truncated mean | Remove 1 and 100 → mean of remaining data |
+| **Weighted Mean** | Mean where values have different importance (weights). | weighted average | (80×2 + 90×3) / (2 + 3) = 86 |
+| **Weighted Median** | Value where half of total weight lies above and below. | — | Values (10,20,30), weights (1,2,3) → 20 |
+
+---
+
+## 1. Central Tendency (Center)
+
+- **Mean** = average = Σx / n → sensitive to outliers  
+- **Weighted Mean** = Σwx / Σw  
+- **Median** = middle value → robust to outliers  
+- **Mode** = most frequent value  
+
+
+## 2. Position (Location)
+
+- **Percentile (Pth)** = P% of data lies below this value  
+- **Quartiles** = Q1 (25%), Q2 (50%), Q3 (75%)  
+- **Deciles** = data split into 10 equal parts  
+
+## 3. Spread (Dispersion)
+
+- **Range** = max − min → very sensitive to outliers  
+- **Variance** = average squared deviation from mean  
+- **Standard Deviation** = √variance  
+- **IQR (Interquartile Range)** = Q3 − Q1 → robust measure  
+
+## 4. Robust Statistics (Outlier-Resistant)
+
+- **Median** = most robust measure of center  
+- **Trimmed Mean** = mean after removing extreme values  
+- **Winsorized Mean** = mean after capping extremes  
+- **Weighted Median** = median with importance weights  
+
+## 5. Shape of Distribution
+
+- **Skewness** = asymmetry of distribution (left/right tail)  
+- **Kurtosis** = tail heaviness / peakedness  
+
+## 6. High-Yield Relationships
+
+- Mean > Median → Right-skewed distribution  
+- Mean < Median → Left-skewed distribution  
+- Mean ≈ Median → Symmetric distribution  
+
+## 7. Robustness Rule (VERY IMPORTANT)
+
+- **Sensitive:** Mean, Range, Variance  
+- **Robust:** Median, IQR, Trimmed Mean  
+
+## 8. Quick Memory Map
+
+- **Center** → Mean, Median, Mode  
+- **Position** → Percentiles, Quartiles  
+- **Spread** → Variance, Standard Deviation, IQR  
+- **Robust** → Median, IQR, Trimmed Mean  
+- **Shape** → Skewness, Kurtosis  
+
+---
+## 📌  Summary
+
+- **Center:** Mean, Median, Mode  
+- **Spread:** IQR, Count  
+- **Robust measures:** Median, IQR, Trimmed Mean  
+- **Outliers:** Extreme values that distort mean-based statistics  
+- Mean is **sensitive** to outliers  
+- Median and IQR are **robust**  
+- Weighted measures handle **importance differences**  
+
+
+
+
+
+
 
 
